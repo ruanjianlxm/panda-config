@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="src" path="src/test/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry sourcepath="D:/develop/gradlejars/caches/modules-2/files-2.1/org.springframework/spring-context-support/3.2.9.RELEASE/db61712c278f6f82ebaa031cff74c8b5fc090311/spring-context-support-3.2.9.RELEASE-sources.jar" kind="lib" path="D:/develop/gradlejars/caches/modules-2/files-2.1/org.springframework/spring-context-support/3.2.9.RELEASE/8d56d346f72337cab64692fecb2527b9bcaec150/spring-context-support-3.2.9.RELEASE.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/D:/develop/gradlejars/caches/modules-2/files-2.1/org.springframework/spring-context-support/3.2.9.RELEASE/a1c2b8bccca373cf70efcbe2691deca0842c5e9e/spring-context-support-3.2.9.RELEASE-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="D:/develop/gradlejars/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.3.2/d2a489573c0ed2c4942b3660decad5d65087b406/commons-lang3-3.3.2-sources.jar" kind="lib" path="D:/develop/gradlejars/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.3.2/90a3822c38ec8c996e84c16a3477ef632cbc87a3/commons-lang3-3.3.2.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/D:/develop/gradlejars/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.3.2/43ffe692648166363bceadc63ac76c7d19b4ebd7/commons-lang3-3.3.2-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="D:/develop/gradlejars/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.7/b5a646b81b899e930f8600c5f45766dd82743d93/jcl-over-slf4j-1.7.7-sources.jar" kind="lib" path="D:/develop/gradlejars/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.7/56003dcd0a31deea6391b9e2ef2f2dc90b205a92/jcl-over-slf4j-1.7.7.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/D:/develop/gradlejars/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.7/e64bfcfeaec0aa84d2d943763fc06cd457138483/jcl-over-slf4j-1.7.7-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="D:/develop/gradlejars/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.1.2/decd76e2c461157804473468bbdc6b8eb6d6121b/logback-classic-1.1.2-sources.jar" kind="lib" path="D:/develop/gradlejars/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.1.2/b316e9737eea25e9ddd6d88eaeee76878045c6b2/logback-classic-1.1.2.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/D:/develop/gradlejars/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.1.2/bc607e83fa5c5862d67aebede1ae734450397f38/logback-classic-1.1.2-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="D:/develop/gradlejars/caches/modules-2/files-2.1/org.logback-extensions/logback-ext-spring/0.1.2/1329e0c62b69020e520c8d83cb8685238035d0b3/logback-ext-spring-0.1.2-sources.jar" kind="lib" path="D:/develop/gradlejars/caches/modules-2/files-2.1/org.logback-extensions/logback-ext-spring/0.1.2/3466779c4cae1d39b0deac1615dc01c46cef1c10/logback-ext-spring-0.1.2.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/D:/develop/gradlejars/caches/modules-2/files-2.1/org.logback-extensions/logback-ext-spring/0.1.2/5886575a4ed546f0ff245d8c8da51ece29b07ab3/logback-ext-spring-0.1.2-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="D:/develop/gradlejars/caches/modules-2/files-2.1/com.alibaba/fastjson/1.1.41/795547bd8353ad12eb909594532195ec7df47ede/fastjson-1.1.41-sources.jar" kind="lib" path="D:/develop/gradlejars/caches/modules-2/files-2.1/com.alibaba/fastjson/1.1.41/a244aa752b9e0210d0e50b5c1e11319711ed9290/fastjson-1.1.41.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/D:/develop/gradlejars/caches/modules-2/files-2.1/com.alibaba/fastjson/1.1.41/f6421e26405c55cc443336a489843401018003c1/fastjson-1.1.41-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="D:/develop/gradlejars/caches/modules-2/files-2.1/org.apache.curator/curator-recipes/2.4.2/564dff819c0d71039d36bf30620076c2c821e6f8/curator-recipes-2.4.2-sources.jar" kind="lib" path="D:/develop/gradlejars/caches/modules-2/files-2.1/org.apache.curator/curator-recipes/2.4.2/2a574f306c1e1ff75ac4676ed76b094bddef86a7/curator-recipes-2.4.2.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/D:/develop/gradlejars/caches/modules-2/files-2.1/org.apache.curator/curator-recipes/2.4.2/f0ad1e18e929e3c2594678a8f55f39552b15439f/curator-recipes-2.4.2-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="D:/develop/gradlejars/caches/modules-2/files-2.1/javax.transaction/jta/1.1/d5dad66d06246bd2e1e369cebff27faa9beb065a/jta-1.1-sources.jar" kind="lib" path="D:/develop/gradlejars/caches/modules-2/files-2.1/javax.transaction/jta/1.1/2ca09f0b36ca7d71b762e14ea2ff09d5eac57558/jta-1.1.jar"/>
+	<classpathentry sourcepath="D:/develop/gradlejars/caches/modules-2/files-2.1/org.aspectj/aspectjrt/1.8.1/b9f8bf867ec54e13e555d7a2dead54c42455e4e2/aspectjrt-1.8.1-sources.jar" kind="lib" path="D:/develop/gradlejars/caches/modules-2/files-2.1/org.aspectj/aspectjrt/1.8.1/5e7a0fa36cc24ead36d885b9d775bb31ffa8524c/aspectjrt-1.8.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/D:/develop/gradlejars/caches/modules-2/files-2.1/org.aspectj/aspectjrt/1.8.1/6ec33113b0d50ac96ee5b7de1b0384469f2afe96/aspectjrt-1.8.1-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="D:/develop/gradlejars/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.8.1/27b46a2cc083104e843271d69a1097dc3b457c2f/aspectjweaver-1.8.1-sources.jar" kind="lib" path="D:/develop/gradlejars/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.8.1/da75e95c91703667b2ae20acdd3d8ee40ea7aabd/aspectjweaver-1.8.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/D:/develop/gradlejars/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.8.1/2ec05cd89d7b8a753dcf5cadd0526e2f3a561893/aspectjweaver-1.8.1-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="D:/develop/gradlejars/caches/modules-2/files-2.1/junit/junit/4.11/28e0ad201304e4a4abf999ca0570b7cffc352c3c/junit-4.11-sources.jar" kind="lib" path="D:/develop/gradlejars/caches/modules-2/files-2.1/junit/junit/4.11/4e031bb61df09069aeb2bffb4019e7a5034a4ee0/junit-4.11.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/D:/develop/gradlejars/caches/modules-2/files-2.1/junit/junit/4.11/f3289e8097c0013b711d058b563064c3bded4423/junit-4.11-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="D:/develop/gradlejars/caches/modules-2/files-2.1/org.springframework/spring-test/3.2.9.RELEASE/a7393bc299c4f6ea9d6324eb293920ac936c421a/spring-test-3.2.9.RELEASE-sources.jar" kind="lib" path="D:/develop/gradlejars/caches/modules-2/files-2.1/org.springframework/spring-test/3.2.9.RELEASE/52719fdd2e959b5b89ea361334d6c022a6d1d04d/spring-test-3.2.9.RELEASE.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/D:/develop/gradlejars/caches/modules-2/files-2.1/org.springframework/spring-test/3.2.9.RELEASE/693f5b932d101924b24eb471349b14327b8e7dd3/spring-test-3.2.9.RELEASE-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="D:/develop/gradlejars/caches/modules-2/files-2.1/org.springframework/spring-beans/3.2.9.RELEASE/e44a3cdcc20be53daad2a055cb40474d3e830bf2/spring-beans-3.2.9.RELEASE-sources.jar" kind="lib" path="D:/develop/gradlejars/caches/modules-2/files-2.1/org.springframework/spring-beans/3.2.9.RELEASE/31dcffd88a80b610ccd57ee9618301a1d883b53d/spring-beans-3.2.9.RELEASE.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/D:/develop/gradlejars/caches/modules-2/files-2.1/org.springframework/spring-beans/3.2.9.RELEASE/2e0dedb75c6cf5199bd9f07503c81e399706b490/spring-beans-3.2.9.RELEASE-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="D:/develop/gradlejars/caches/modules-2/files-2.1/org.springframework/spring-context/3.2.9.RELEASE/11aec1d2d54350958e9098f5ed335680a40333b4/spring-context-3.2.9.RELEASE-sources.jar" kind="lib" path="D:/develop/gradlejars/caches/modules-2/files-2.1/org.springframework/spring-context/3.2.9.RELEASE/9de55b66bd227549b60b4b602f6d1a567a67dbba/spring-context-3.2.9.RELEASE.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/D:/develop/gradlejars/caches/modules-2/files-2.1/org.springframework/spring-context/3.2.9.RELEASE/9fe493ee89a9135da893cb673589869d26a8f68c/spring-context-3.2.9.RELEASE-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="D:/develop/gradlejars/caches/modules-2/files-2.1/org.springframework/spring-core/3.2.9.RELEASE/9c7e72bfa1ab9d0fcf742064094ef51b2d4b4e2a/spring-core-3.2.9.RELEASE-sources.jar" kind="lib" path="D:/develop/gradlejars/caches/modules-2/files-2.1/org.springframework/spring-core/3.2.9.RELEASE/23566c793f7db5859dbceb98cd1a5789b489e0b5/spring-core-3.2.9.RELEASE.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/D:/develop/gradlejars/caches/modules-2/files-2.1/org.springframework/spring-core/3.2.9.RELEASE/d6dd6e965f5fd09e6f7d8d746b3505dbb288fc14/spring-core-3.2.9.RELEASE-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="D:/develop/gradlejars/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.7/acd62e31cc314266e73eebed0b6dd7ea974a0ed/slf4j-api-1.7.7-sources.jar" kind="lib" path="D:/develop/gradlejars/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.7/2b8019b6249bb05d81d3a3094e468753e2b21311/slf4j-api-1.7.7.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/D:/develop/gradlejars/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.7/f7f3d9c6e2f145a2cc37931c4b604c7f5e96c6c/slf4j-api-1.7.7-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="D:/develop/gradlejars/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.1.2/502e1c764542fe747896c1dc04f023acfe0e5cbc/logback-core-1.1.2-sources.jar" kind="lib" path="D:/develop/gradlejars/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.1.2/2d23694879c2c12f125dac5076bdfd5d771cc4cb/logback-core-1.1.2.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/D:/develop/gradlejars/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.1.2/63285766a5d430cc2ea0733b08701ae0bb6d081f/logback-core-1.1.2-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="D:/develop/gradlejars/caches/modules-2/files-2.1/org.apache.curator/curator-framework/2.4.2/8565c70dd663e3ef89d6fe640db8ddb865faa77d/curator-framework-2.4.2-sources.jar" kind="lib" path="D:/develop/gradlejars/caches/modules-2/files-2.1/org.apache.curator/curator-framework/2.4.2/58ac059a9de68fc8cfd8758ba891bd822b5bb3c8/curator-framework-2.4.2.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/D:/develop/gradlejars/caches/modules-2/files-2.1/org.apache.curator/curator-framework/2.4.2/16a25e848de4cd379a44bdb51b7100edd6627f31/curator-framework-2.4.2-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="D:/develop/gradlejars/caches/modules-2/files-2.1/org.apache.zookeeper/zookeeper/3.4.5/ad9efdd95bf63381ecf2898e84f392bbfc4784f3/zookeeper-3.4.5-sources.jar" kind="lib" path="D:/develop/gradlejars/caches/modules-2/files-2.1/org.apache.zookeeper/zookeeper/3.4.5/c0f69fb36526552a8f0bc548a6c33c49cf08e562/zookeeper-3.4.5.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/D:/develop/gradlejars/caches/modules-2/files-2.1/org.apache.zookeeper/zookeeper/3.4.5/9f7c6466e4e36cb3054121ea6b2f9bf5ce43647b/zookeeper-3.4.5-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="D:/develop/gradlejars/caches/modules-2/files-2.1/com.google.guava/guava/14.0.1/169f11e28e3ed9a64e9fa895eaafb579e6a5aa6c/guava-14.0.1-sources.jar" kind="lib" path="D:/develop/gradlejars/caches/modules-2/files-2.1/com.google.guava/guava/14.0.1/69e12f4c6aeac392555f1ea86fab82b5e5e31ad4/guava-14.0.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/D:/develop/gradlejars/caches/modules-2/files-2.1/com.google.guava/guava/14.0.1/d336ce5722e3ae04548d60b6e3eb69e80d0ba631/guava-14.0.1-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="D:/develop/gradlejars/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/1dc37250fbc78e23a65a67fbbaf71d2e9cbc3c0b/hamcrest-core-1.3-sources.jar" kind="lib" path="D:/develop/gradlejars/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/D:/develop/gradlejars/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/ad09811315f1d4f5756986575b0ea16b99cd686f/hamcrest-core-1.3-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="D:/develop/gradlejars/caches/modules-2/files-2.1/org.springframework/spring-aop/3.2.9.RELEASE/1930e91a57602851902742629e7471a9a06f0ea0/spring-aop-3.2.9.RELEASE-sources.jar" kind="lib" path="D:/develop/gradlejars/caches/modules-2/files-2.1/org.springframework/spring-aop/3.2.9.RELEASE/5410c5cd31fdf591ddebe23e0f727b5ba1a626b9/spring-aop-3.2.9.RELEASE.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/D:/develop/gradlejars/caches/modules-2/files-2.1/org.springframework/spring-aop/3.2.9.RELEASE/2ead570b0ce96e8af56cfbb13e1588b82e3473a3/spring-aop-3.2.9.RELEASE-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="D:/develop/gradlejars/caches/modules-2/files-2.1/org.springframework/spring-expression/3.2.9.RELEASE/33a064badc1fce6f3feb530c1957ac5887c82bc5/spring-expression-3.2.9.RELEASE-sources.jar" kind="lib" path="D:/develop/gradlejars/caches/modules-2/files-2.1/org.springframework/spring-expression/3.2.9.RELEASE/3dc5a9e674d969c377d3d737a5ca59a401b097f3/spring-expression-3.2.9.RELEASE.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/D:/develop/gradlejars/caches/modules-2/files-2.1/org.springframework/spring-expression/3.2.9.RELEASE/35939c5cb7e071d998479389278d50cede64fe0b/spring-expression-3.2.9.RELEASE-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="D:/develop/gradlejars/caches/modules-2/files-2.1/org.apache.curator/curator-client/2.4.2/51e5f6361086889b6d2fc470e3a2ee98a61e7a18/curator-client-2.4.2-sources.jar" kind="lib" path="D:/develop/gradlejars/caches/modules-2/files-2.1/org.apache.curator/curator-client/2.4.2/7baed474acac129c34ee1a9deecc61af1280e02d/curator-client-2.4.2.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/D:/develop/gradlejars/caches/modules-2/files-2.1/org.apache.curator/curator-client/2.4.2/d9e243953b63e9be4bbe17a420cb6e7bf6a392ef/curator-client-2.4.2-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="D:/develop/gradlejars/caches/modules-2/files-2.1/jline/jline/0.9.94/7ac7b49164e4f9d250309c70caee645151b87e46/jline-0.9.94-sources.jar" kind="lib" path="D:/develop/gradlejars/caches/modules-2/files-2.1/jline/jline/0.9.94/99a18e9a44834afdebc467294e1138364c207402/jline-0.9.94.jar"/>
+	<classpathentry sourcepath="D:/develop/gradlejars/caches/modules-2/files-2.1/org.jboss.netty/netty/3.2.2.Final/1a9960822301de2d5cf35d4d87e9c6cce1bcf1fd/netty-3.2.2.Final-sources.jar" kind="lib" path="D:/develop/gradlejars/caches/modules-2/files-2.1/org.jboss.netty/netty/3.2.2.Final/d4afed2b2038db3f5298da54314575ef194f8bd0/netty-3.2.2.Final.jar"/>
+	<classpathentry sourcepath="D:/develop/gradlejars/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/4a4b6d692e17846a9f3da036438a7ac491d3c814/aopalliance-1.0-sources.jar" kind="lib" path="D:/develop/gradlejars/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar"/>
+</classpath>
