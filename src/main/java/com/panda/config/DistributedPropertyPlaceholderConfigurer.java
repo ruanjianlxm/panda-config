@@ -22,7 +22,7 @@ public class DistributedPropertyPlaceholderConfigurer extends
 	private List<PropertyUnit> propertyUnitList = new ArrayList<PropertyUnit>();
 	private PropertyUnitFactory propertyUnitFactory;
 	private PropertyChangeListener propertyListener;
-	
+	                           
 	/**
 	 * Return a merged Properties instance containing both the loaded properties
 	 * and properties set on this FactoryBean.

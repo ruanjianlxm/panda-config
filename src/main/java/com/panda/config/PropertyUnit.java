@@ -22,7 +22,17 @@ public class PropertyUnit {
 	private boolean configUseRemote = false;
 	private String[] excludeConfigs;
 	ScheduledExecutorService service = Executors.newSingleThreadScheduledExecutor();
-
+   /**
+    * 配置单元，一个PropertyUnit代表一个配置文件
+    * @param serverpath  服务的节点
+    * @param configFile 配置文件路径
+    * @param excludeConfig  要忽略的文件
+    * @param zkClient   zookeeper连接的客户端
+    * @param configUseRemote  是否使用远程节点
+    * @param pushToRemote     本地配置是否推送到远程
+    * @param isDynamic        是否动态监听本地配置文件
+    * @param propertyListener 本地配置文件改动后的回调方法
+    */
 	public PropertyUnit(String serverpath, String configFile,String excludeConfig,
 			CuratorFramework zkClient,boolean configUseRemote, boolean pushToRemote, boolean isDynamic,
 			PropertyChangeListener propertyListener) {
@@ -63,7 +73,10 @@ public class PropertyUnit {
 		}, 1000 * 60, TimeUnit.MILLISECONDS);
 	}
 	}
-
+    /**
+     * 加载所有的配置，会合并本地配置和远程配置
+     * @return
+     */
 	public Properties loadAll() {
 		logger.debug("Loading all properties");
 		if (pushToRemote) {

@@ -33,7 +33,18 @@ public class UnitConfig {
 	private long createTime;
 	private volatile boolean hadDeleted = false;
 	private String[] excludeUnits;
-
+     /**
+      * 配置单元
+      * @param remoteUnitPath
+      * @param localUnitPath
+      * @param excludeUnit
+      * @param zkClient
+      * @param useRemote
+      * @param pushtoRemote
+      * @param isDynamic
+      * @param ingoreUnitWatchInterval
+      * @param propertyListener
+      */
 	public UnitConfig(String remoteUnitPath, String localUnitPath,
 			String excludeUnit, CuratorFramework zkClient, boolean useRemote,
 			boolean pushtoRemote, boolean isDynamic,
@@ -64,7 +75,9 @@ public class UnitConfig {
 			registerWatcher();
 		}
 	}
-
+    /**
+     * 删除远程配置
+     */
 	private void deleteRemoteConfig() {
 		try {
 			if (!hadDeleted) {
@@ -83,6 +96,10 @@ public class UnitConfig {
 		}
 	}
 
+	/**
+	 * 推送本地配置到远程
+	 * @param unitPath
+	 */
 	public void pushConfigToRemote(String unitPath) {
 		deleteRemoteConfig();
 		File path = new File(unitPath);
@@ -134,6 +151,10 @@ public class UnitConfig {
 		}
 	}
 
+	/**
+	 * 加载配置单元
+	 * @param zkPath
+	 */
 	public void loadUnitConfig(String zkPath) {
 		try {
 			if (zkClient.checkExists().forPath(zkPath) != null) {
@@ -190,6 +211,9 @@ public class UnitConfig {
 		}
 	}
 
+	/**
+	 * 注册配置监听器
+	 */
 	private void registerWatcher() {
 
 		PathChildrenCacheListener listener = new PathChildrenCacheListener() {
@@ -296,7 +320,7 @@ public class UnitConfig {
 			addToWatchList(listener, path);
 		}
 	}
-
+ 
 	private void addToWatchList(PathChildrenCacheListener listener, String path) {
 		if (isExcludeUnitFile(path)) {
 			return;

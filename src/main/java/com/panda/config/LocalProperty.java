@@ -40,7 +40,11 @@ public class LocalProperty implements IPropertySupport {
 		}
 	}
 	private final String configFile;
-
+    /**
+     * 加载配置文件
+     * @param configFile
+     * @param isDynamic 是否动态，如果动态，那么当文件变更时，自动刷新配置
+     */
 	public LocalProperty(String configFile, boolean isDynamic) {
 		this.configFile = configFile;
 		try {
@@ -52,7 +56,9 @@ public class LocalProperty implements IPropertySupport {
 			throw new RuntimeException(e);
 		}
 	}
-
+    /**
+     * 注册文件监听，当properties文件有新增、修改、删除变动，那么就刷新配置
+     */
 	@Override
 	public void registerWatcher() {
 		try {
@@ -112,7 +118,10 @@ public class LocalProperty implements IPropertySupport {
 		};
 		executorService.submit(checkConfigLoop);
 	}
-
+ 
+	/**
+	 * 加载本地配置文件
+	 */
 	@Override
 	public void loadConfig() {
 		try {
@@ -143,7 +152,10 @@ public class LocalProperty implements IPropertySupport {
 	public String get(String key) {
 		return localConfigMap.get(key);
 	}
-
+    
+	/**
+	 * 获得所有的配置
+	 */
 	@Override
 	public Properties loadAll() {
 		Properties prop = new Properties();
@@ -159,7 +171,11 @@ public class LocalProperty implements IPropertySupport {
 			executorService.shutdownNow();
 		}
 	}
-
+    
+	/**
+	 * 同步本地文件，即把配置文件持久化到本地配置文件中
+	 * @param properties
+	 */
 	public void syncLocalConfig(Properties properties) {
 		Path file;
 		try {

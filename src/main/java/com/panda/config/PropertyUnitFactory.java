@@ -54,7 +54,9 @@ public class PropertyUnitFactory {
 	private String excludeUnit;
 
 	private CuratorFramework zkClient;
-
+     /**
+      * 配置中心，初始化各个配置项的值
+      */
 	public PropertyUnitFactory() {
 		try {
 
@@ -140,7 +142,12 @@ public class PropertyUnitFactory {
 			logger.error("initConfigBundle error:{}", e);
 		}
 	}
-
+   /**
+    * 创建配置项文件单元
+    * @param configName
+    * @param propertyListener
+    * @return
+    */
 	public PropertyUnit createConfigBundle(String configName,
 			PropertyChangeListener propertyListener) {
 		return new PropertyUnit(configPath.concat("/").concat(configName),
@@ -150,6 +157,9 @@ public class PropertyUnitFactory {
 				Boolean.valueOf(configSupportDynamic), propertyListener);
 	}
 
+	/**
+	 * 加载配置文件
+	 */
 	public void loadUnitProperties() {
 		if (Boolean.valueOf(unitUseRemote) || Boolean.valueOf(unitPushToRemote)) {
 			UnitConfig config = new UnitConfig(remoteUnitPath, localUnitPath,
@@ -195,7 +205,10 @@ public class PropertyUnitFactory {
 			throw new NullPointerException(errorLogMsg);
 		}
 	}
-
+    /**
+     * 删除远程配置
+     * @param path
+     */
 	private void deleteRemoteConfig(String path) {
 		try {
 			if (zkClient.checkExists().forPath(path) != null) {

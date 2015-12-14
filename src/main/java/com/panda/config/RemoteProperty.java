@@ -15,6 +15,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * 远程配置的修改和同步
  * @author Jason
  * 
  */
@@ -28,7 +29,15 @@ public class RemoteProperty implements IPropertySupport {
 	private final String servicePath;
 	private final String configFile;
 	private final PropertyChangeListener propertyListener;
-
+    /**
+     * 
+     * @param servicePath  服务节点，即配置的properties所代表的节点
+     * @param zkClient zookeeper客户端
+     * @param configUseRemote 是否使用远程节点，即，启动的时候是否去远程加载配置文件
+     * @param pushtoRemote   是否推送到远程节点
+     * @param isDynamic 是否动态监听
+     * @param propertyListener  配置发生变更时的回调方法
+     */
 	public RemoteProperty(String servicePath, CuratorFramework zkClient,boolean configUseRemote,
 			boolean pushtoRemote, boolean isDynamic,
 			PropertyChangeListener propertyListener) {
@@ -44,6 +53,10 @@ public class RemoteProperty implements IPropertySupport {
 		}*/
 	}
 
+	/**
+	 * 把本地的配置项推送到远程
+	 * @param localProperties
+	 */
 	public void pushConfigToRemote(Properties localProperties) {
 		try {
 			if(zkClient.checkExists().forPath(servicePath)!=null){
@@ -68,6 +81,9 @@ public class RemoteProperty implements IPropertySupport {
 		}
 	}
 
+	/**
+	 * 获得某个值
+	 */
 	@Override
 	public String get(String key) {
 		return remoteConfigMap.get(key);
@@ -82,12 +98,17 @@ public class RemoteProperty implements IPropertySupport {
 		return prop;
 	}
 
+	/**
+	 * 加载远程配置文件，从远程zk中获取，写到本地map当中
+	 */
 	@Override
 	public void loadConfig() {
 		try {
 			if (zkClient.checkExists().forPath(servicePath) != null) {
+				//获得所有的子节点
 				List<String> childPaths = zkClient.getChildren().forPath(
 						servicePath);
+				//轮询子节点，获得所有的propertie配置项
 				for (String path : childPaths) {
 					byte[] valBytes = zkClient.getData().forPath(
 							servicePath + "/" + path);
@@ -101,7 +122,10 @@ public class RemoteProperty implements IPropertySupport {
 			logger.error("localConfig init error:{}", e);
 		}
 	}
-
+    
+	/**
+	 * 注册监听，当远程zk上面的配置节点有变动的时候，马上通知到本地
+	 */
 	@Override
 	public void registerWatcher() {
 		final PathChildrenCache pathChildrenCache = new PathChildrenCache(

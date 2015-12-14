@@ -7,7 +7,7 @@ import java.util.Properties;
 
 /**
  * @author Jason
- *
+ *   文件工具类，把properties写到文件当中
  */
 public class UnitFile {
 
