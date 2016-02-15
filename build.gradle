@@ -8,11 +8,7 @@ configurations {
 }
 
 dependencies {
-  components {
-            eachComponent { details ->
-                details.statusScheme = ["snapshot", "integration", "milestone", "release"]
-            }
-        }
+
        
     
         /* spring */
